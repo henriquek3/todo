@@ -12,8 +12,14 @@ class Todo extends Model
      */
     protected $fillable = [
         'text',
+        // 'user_id',
     ];
-    
+
+    /**
+     * @var string
+     */
+    protected $table = 'todo';
+
     /**
      * --------------------------------------------------------
      * Relacionamentos

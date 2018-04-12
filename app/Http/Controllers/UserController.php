@@ -99,7 +99,8 @@ class UserController extends Controller
         // Jeito 3.
         $userToUpdate->update($inputs);
 
-        return redirect("/users/{$userToUpdate->id}/edit")->with('status', 'Usuário atualizado');
+        return redirect("/users/{$userToUpdate->id}/edit")
+            ->with('status', 'Usuário atualizado');
     }
 
     /**

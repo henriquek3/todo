@@ -13,10 +13,10 @@ class DashboardController extends Controller
      */
     public function index(Request $request)
     {
-        //dd($request->user());
+        //dd($request->user());        
 
         return view('pages.dashboard.index', [
-            'user' => $user,
+            'user' => $request->user()->name
         ]);
     }
 
